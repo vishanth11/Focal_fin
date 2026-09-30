@@ -1,0 +1,18 @@
+# FOCAL root
+node_modules/
+venv/
+.venv/
+dist/
+build/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+coverage/
+artifacts/
+cache/
+typechain-types/
+*.log

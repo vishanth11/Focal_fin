@@ -1,0 +1,27 @@
+{
+  "name": "OMEN Verified Company: TechNova Pvt Ltd",
+  "description": "This soulbound NFT certifies that TechNova Pvt Ltd has been verified by OMEN as a legitimate company.",
+  "image": "ipfs://QmYourRedBadgeImageHash/red-badge.png",
+  "attributes": [
+    {
+      "trait_type": "Company Name",
+      "value": "TechNova Pvt Ltd"
+    },
+    {
+      "trait_type": "Domain",
+      "value": "technova.com"
+    },
+    {
+      "trait_type": "Verification Date",
+      "value": "2025-01-15"
+    },
+    {
+      "trait_type": "Verification Hash",
+      "value": "0xf7a6714442c73909b34ec53ddd4f543691a9b4b6e569d153b9fdccce21506989"
+    },
+    {
+      "trait_type": "Status",
+      "value": "revoked"
+    }
+  ]
+}
