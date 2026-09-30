@@ -1,0 +1,46 @@
+﻿# Server
+PORT=5000
+NODE_ENV=development
+
+# Database â€” MongoDB Atlas (or a local instance). DB name is "focal".
+# Never commit real credentials. Rotate any password that was previously exposed.
+MONGODB_URI=mongodb://127.0.0.1:27017/focal
+
+# Local MongoDB alternative:
+# MONGODB_URI=mongodb://127.0.0.1:27017/focal
+
+# Blockchain â€” Polygon Amoy testnet (Mumbai is deprecated)
+RPC_URL=https://polygon-amoy.g.alchemy.com/v2/alch_0iZLols1xWFew8JX3MhOe
+# Address of the deployed FocalCompanyBadge contract. Minting is REAL only:
+# with the placeholder left in place, mint attempts fail with an honest error
+CONTRACT_ADDRESS=0x9124A20aE4a715Fcee6056bf1F5f95E4358647C6
+# Fresh dedicated admin wallet (contract owner / minter). Keep secret!
+ADMIN_PRIVATE_KEY=416a6708275d39f0f6fbb97e35cfefdec336557c21cb9673d14a86bbe2e1ee0e
+ADMIN_WALLET_ADDRESS=0x1aF0616B41F82848045Ae3586C78D3d83702451e
+
+# Demo company onboarding (DEMO MODE)
+# true  = demo verification is simulated for new registrations (no external
+#         GST registry is called). Registrations still start PENDING â€” only
+#         the admin approval endpoint verifies a company, in both modes.
+# false/unset = production pipeline only (register -> pending -> admin
+#         review -> approval -> mint).
+DEMO_VERIFICATION_MODE=false
+
+# Pinata IPFS â€” required for badge metadata uploads in BOTH modes
+PINATA_JWT=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJlZTBkOWRhMC0yZTJlLTQ5NTQtOGFiZC01NWEzODZhMTM5NGUiLCJlbWFpbCI6InZydW4yODA1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJlM2NmMjFkYzAzYzljNmQwYzAxYiIsInNjb3BlZEtleVNlY3JldCI6IjRkZTcyYjVlNGM4NTgyZTE3ZGQxZGVjZDY1MzMyNGMzNjMzYzg0N2YzYmMzMzMxZWQxYjRjNDdlNTI4YWI5NGEiLCJleHAiOjE4MjE3NTg0NDB9.PYu8gZJYfJAKJyvuy0x8bA7Az4ejWi61TVApXMJDTU4
+# JWT
+JWT_SECRET=88265dd0d9c098c3a93be1f08cb35a20d48eff06c0f74218d647919958f898e9
+JWT_EXPIRE=7d
+ADMIN_EMAIL=admin@focal.network
+ADMIN_PASSWORD=change_this_strong_password
+
+# ML API â€” base URL only (the service appends /predict and /health)
+ML_API_URL=http://localhost:8000
+
+# CORS â€” comma-separated allowed origins
+CORS_ORIGINS=http://localhost:5174,http://localhost:5173,http://localhost:3000
+
+# External APIs (optional)
+PHISHTANK_API_KEY=your_key
+GOOGLE_SAFE_BROWSING_API_KEY=your_key
+WHOIS_API_KEY=your_key

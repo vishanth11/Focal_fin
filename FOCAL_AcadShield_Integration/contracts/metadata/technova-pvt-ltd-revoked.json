@@ -1,0 +1,27 @@
+{
+  "name": "FOCAL Verified Company: TechNova Pvt Ltd",
+  "description": "This soulbound NFT certifies that TechNova Pvt Ltd has been verified by FOCAL as a legitimate company.",
+  "image": "ipfs://QmYourRedBadgeImageHash/red-badge.png",
+  "attributes": [
+    {
+      "trait_type": "Company Name",
+      "value": "TechNova Pvt Ltd"
+    },
+    {
+      "trait_type": "Domain",
+      "value": "technova.com"
+    },
+    {
+      "trait_type": "Verification Date",
+      "value": "2025-01-15"
+    },
+    {
+      "trait_type": "Verification Hash",
+      "value": "0xcc3fcd4694b4d0ca3180b195c637820f514b6830389c9b7a881cc364eee01754"
+    },
+    {
+      "trait_type": "Status",
+      "value": "revoked"
+    }
+  ]
+}

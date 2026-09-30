@@ -1,0 +1,12 @@
+# FOCAL ML service
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.ipynb_checkpoints/
